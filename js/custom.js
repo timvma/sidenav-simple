@@ -6,11 +6,11 @@
 var navi = document.getElementById("mySidenav").style;
 
 function openNav() {
-	nav.width = "250px";
+	navi.width = "250px";
 }
 
 function closeNav() {
-  nav.width = "0";
+  navi.width = "0";
 }
 
 var xx;
