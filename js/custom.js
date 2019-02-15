@@ -1,27 +1,16 @@
 
-
-
-
-
 var navi = document.getElementById("mySidenav").style;
-
-function openNav() {
-	navi.width = "250px";
-}
-
-function closeNav() {
-  navi.width = "0";
-}
-
 var xx;
-var b = document.body;
+var b = document.body; 
+
+function openNav() { navi.width = "250px";}
+function closeNav() { navi.width = "0"; }
+
 
 window.addEventListener('load', function(){
-	
 	b.addEventListener('touchstart', function(e){
 		xx = e.touches[0].clientX;
 	});
-	
 	
 	b.addEventListener('touchmove', function(e){
 		var change = e.touches[0].clientX - xx ;
@@ -35,6 +24,4 @@ window.addEventListener('load', function(){
 		}
 	});
 
-	
-	
 });

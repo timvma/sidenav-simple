@@ -26,6 +26,7 @@ h2 {
 
 .hero-text {
   justify-self: center;
+  padding:10px;
   background: #999;
   display: block;
   height: 250px;
@@ -84,7 +85,7 @@ section {
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	background:#777;
+	background:#eee;
 	height: 100vh;
 }
 
