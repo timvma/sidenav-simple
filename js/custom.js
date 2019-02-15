@@ -1,48 +1,40 @@
 
-// NAVBAR SCROLL
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-  var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("navbar").style.top = "0";
-  } else {
-    document.getElementById("navbar").style.top = "-50px";
-  }
-  prevScrollpos = currentScrollPos;
-}
 
 
 
 
-// SIDENAV TOUCH
-
-//document.body.addEventListener('touchmove',navTouchMove(event),false);
-//document.body.addEventListener('touchend',navTouchEnd(event),false);
-//document.getElementById('page').addEventListener('touchstart',navTouchStart(event));
-
+var navi = document.getElementById("mySidenav").style;
 
 function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
+	nav.width = "250px";
 }
 
 function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
+  nav.width = "0";
 }
 
-var navi = document.getElementById('mySidenav');
-var startingX;
+var xx;
+var b = document.body;
 
-function navTouchStart(evt){
-	startingX = evt.touches[0].clientX;
-}
-function navTouchMove(evt){
-	var change = evt.touches[0].clientX - startingX ;
-	var test = evt.touches[0].clientX;
+window.addEventListener('load', function(){
+	
+	b.addEventListener('touchstart', function(e){
+		xx = e.touches[0].clientX;
+	});
+	
+	
+	b.addEventListener('touchmove', function(e){
+		var change = e.touches[0].clientX - xx ;
+		var test = e.touches[0].clientX;
 
-	if( test <= 70  && change > 30){ // reveal
-		navi.style.width = '250px';
-	}
-	if(change < -50 ) { // hide
-		navi.style.width = '0px';
-	}
-}
+		if( test <= 70  && change > 30){ // reveal
+			navi.width = '250px';
+		}
+		if(change < -50 ) { // hide
+			navi.width = '0px';
+		}
+	});
+
+	
+	
+});
