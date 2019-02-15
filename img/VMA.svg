@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="216 -216 1000 1000" style="enable-background:new 216 -216 1000 1000;" xml:space="preserve" >
+<style type="text/css">
+
+	polyline, line {
+		stroke:#fff;
+		stroke-width:60;
+		stroke-miterlimit:10;
+		
+		animation: animation 10s ease-in-out ;
+		
+	}
+
+polyline:hover {
+	stroke-linecap:round;
+}
+
+
+	@keyframes animation {
+		0% {
+			opacity:0;
+			stroke-dasharray: 0;
+		}
+		100% {
+			opacity:1;
+			stroke-dasharray: 8000;
+
+		}
+	}
+</style>
+
+<polyline points="203.1,709.6 274,-216 1092,-194 1190,676 338.6,678.7 1093.5,751.3 1174,-156 216,-134 298,750 "/>
+
+<polyline id="V" points="357.3,280 357.3,563.3 516,447.4	516,307.4 451.1,307.4 451.1,488.3 "/>
+<polyline id="A" points="911.6,465.3 841.4,578.7 1003,578.7 828,352 828,456.4 "/>
+<polyline id="T" points="313.7,-38 409,-38 611,-38 396,-38 396,199 505,199 505,41 412,182 "/>
+<g id="M_1_">
+	<line x1="996.1" y1="241.8" x2="996.1" y2="-93.7"/>
+	<polyline points="834.9,241.8 834.9,-25.4 930.6,83.5 930.6,-30.2 	"/>
+</g>
+<g id="M">
+	<line x1="585.3" y1="610" x2="585.3" y2="274.5"/>
+	<polyline points="749.7,610 749.7,342.9 654,451.8	654,338 	"/>
+</g>
+<polyline id="I" points="665.7,-83 663.7,209 726,209 731,272 731,-30.2 657.5,-30.2 "/>
+
+
+</svg>

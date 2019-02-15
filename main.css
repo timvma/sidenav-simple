@@ -1,0 +1,230 @@
+body {
+	transition: all ease-in-out 300ms;
+	font-family: 'Roboto', sans-serif;
+
+}
+
+p {
+	font-size:24px;
+}
+
+h2 {
+	font-family: 'Staatliches', cursive;
+	font-size: 46px;
+	margin-bottom:10px;
+}
+
+.wrapper {
+	background:#999;
+	width:80vw;
+	margin:0 auto;
+}
+
+
+
+/*******************      NAVIGATION      *****/
+
+#sidenav-menu {
+	
+	height:50px;
+	width:50px;
+	position: fixed;
+	color:#fff;
+}
+
+.navbar{
+	grid-area: navbar;
+	display: grid;
+	grid-template-columns: 15% auto 15%;
+	grid-template-areas: ".main-navi  ";  
+	position: fixed;
+	top:0;
+	transition: all ease-in-out 300ms;
+	transition-delay: 100ms;
+	background:#010101 ;
+	color:#f2f2f2;
+	height:50px;
+	width:100%;
+}	
+
+.navbar ul  {
+	grid-area: main-navi;
+	display:flex;
+}
+
+.navbar > ul >li {
+	padding:10px;
+	margin:auto 0;
+
+}
+.navbar > ul > li:nth-child(1){
+	margin-right: auto;	
+}
+
+.sidenav {
+	display:none;
+}
+
+
+
+
+
+/*******************      HERO      *****/
+.hero{
+	display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+	background: url(img/head.png) center center;
+	background-size: cover;
+	height:100vh;
+}
+
+.hero-text {
+  justify-self: center;
+	background: url('img/VMA.svg');
+	overflow: visible;
+	display: block;
+	height:250px;
+	width: 250px;
+}
+
+/*******************      INTRO      *****/
+
+section {
+	background:#123;
+	display:flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-grow: 1;
+	flex-shrink: 1;
+
+}
+section < .items {
+	padding:10px;
+}
+
+
+
+
+/*
+.intro{
+	grid-area: intro;
+	display: grid;
+	grid-row-gap: 10vw;
+	grid-template-columns:15% 35% 35% 15%;
+	
+	align-self: auto;
+	color:#fff;
+	background: #111;
+
+}
+.intro > div:nth-child(1) {
+	grid-area: intro-1st;
+	align-self: center;
+	justify-self: center;
+	background: #123 url('img/1.jpg') no-repeat center;
+	height:250px;
+	width:250px;
+}
+.intro > div:nth-child(2) {
+
+	grid-area: intro-2nd;
+	align-self: center;
+  justify-self: center;
+}
+
+/*******************      ABOUT      *****/
+
+
+
+
+.about-more {
+	width:70vw;
+	margin:0 auto;
+	display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "about-a . ." "about-a center-image-about about-b" ". . about-b";
+}
+
+
+#center-image-about {
+	grid-area: center-image-about;
+	background: #123;
+
+	min-width:250px;
+	min-height:600px;
+	z-index: 1;
+}
+
+.about-a { grid-area: about-a; }
+
+.about-b { grid-area: about-b; }
+
+
+
+
+
+
+
+
+
+
+.about{
+	grid-area: about;
+	display: grid;
+
+	grid-template-columns:15% 35% 35% 15%;
+	grid-template-areas: ".about-1st about-2nd.";
+	background: #fff;
+	height:100%;
+
+}
+
+.about > div:nth-child(1){
+	grid-area: about-1st;
+	align-self: center;
+  justify-self: center;
+}
+.about > div:nth-child(2){
+	grid-area: about-2nd;
+	align-self: center;
+  justify-self: center;
+}
+
+/*******************      PROJECTS      *****/
+.projects {
+	grid-area: projects;
+	display: grid;
+	grid-template-columns:auto auto auto auto ;
+	justify-content: space-evenly;
+	background:#333;
+	
+}
+
+.projects > div {
+	background:#aaa;
+
+
+}
+.projects > div:nth-child(odd){
+	background:#213;
+}
+
+/*******************      SKILLS      *****/
+
+.skills {
+
+	
+}
+
+/*******************      FOOTER      *****/
+.footer {
+	grid-area: footer; 
+	background:#999;
+
+}
+
+
+
